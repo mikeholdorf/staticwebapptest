@@ -64,12 +64,12 @@ const ItemList = ({ fetchData, items }) => {
                                     <TableCell component="th" scope="row">
                                         {item.category}
                                     </TableCell>
-                                    <TableCell>{item.lname}</TableCell>
-                                    <TableCell>{item.fname}</TableCell>
-                                    <TableCell>{item.lname}</TableCell>
-                                    <TableCell>${item.fname}</TableCell>
+                                    <TableCell>{item.name}</TableCell>
+                                    <TableCell>{item.quantity}</TableCell>
+                                    <TableCell>{item.description}</TableCell>
+                                    <TableCell>${item.unitPrice}</TableCell>
                                     <TableCell>
-                                        <Button variant="contained" color="error" onClick={() => deleteItem(item.emp_id)}>Delete</Button>
+                                        <Button variant="contained" color="error" onClick={() => deleteItem(item.id)}>Delete</Button>
                                     </TableCell>
                                 </TableRow>
                             ))}

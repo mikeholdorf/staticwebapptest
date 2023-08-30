@@ -16,7 +16,7 @@ function App() {
   const fetchData = async () => {
     setLoading(true)
     try {
-      const response = await fetch('/data-api/api/employee');
+      const response = await fetch('/data-api/api/Item');
       if (!response.ok) {
         throw new Error(response.statusText);
       }

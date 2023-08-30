@@ -29,14 +29,12 @@
     }
   },
   "entities": {
-    "employee": {
-      "source": "dbo.employee",
+    "Item": {
+      "source": "dbo.ShoppingItems",
       "permissions": [
         {
-          "role": "anonymous",
-          "actions": [
-            "*"
-          ]
+          "actions": ["*"],
+          "role": "anonymous"
         }
       ]
     }
